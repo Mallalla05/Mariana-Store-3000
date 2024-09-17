@@ -1,1 +1,9 @@
 # Mariana-Store-3000
+
+En dicho proyecto nos ayuda a tener un iventario de los produtos de una tienda,los usuarios pueden registrar productos nuevos,ver y actualizar las cantidades ademas de buscar dichos productos de acuerso por su cantidad o el precio.
+
+Funcionamientos principales:
+- Registrar nuevos productos en el inventario unicamente dando los detalles.
+- Actualizar la cantidad de productos y sus precios.
+- Buscar los productos de acuerdo lo que pidas ya sea nombre, categoria, la cantidad que contiene o su precio.
+- Generar un reporte de los productos ordenados como tu quieras.
