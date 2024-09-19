@@ -6,16 +6,16 @@
 
 #include <string>
 #include <iostream>
+using namespace std;
 
 class Producto {
 public:
     Producto() : nombre(""), categoria(""), precio(0.0), cantidad(0) {}
 
-    Producto(const std::string& nombre, const std::string& categoria, double precio, int cantidad)
+    Producto(const string& nombre, const string& categoria, double precio, int cantidad)
         : nombre(nombre), categoria(categoria), precio(precio), cantidad(cantidad) {}
 
-   
-    std::string getNombre() const {
+    string getNombre() const {
         return nombre;
     }
 
@@ -23,20 +23,18 @@ public:
         return cantidad;
     }
 
-   
     void mostrarProducto() const {
-        std::cout << "Nombre: " << nombre << std::endl;
-        std::cout << "Categoría: " << categoria << std::endl;
-        std::cout << "Precio: $" << precio << std::endl;
-        std::cout << "Cantidad: " << cantidad << std::endl;
+        cout << "Nombre: " << nombre << endl;
+        cout << "Categoría: " << categoria << endl;
+        cout << "Precio: $" << precio << endl;
+        cout << "Cantidad: " << cantidad << endl;
     }
 
 private:
-    std::string nombre;
-    std::string categoria;
+    string nombre;
+    string categoria;
     double precio;
     int cantidad;
 };
 
 #endif // PRODUCTO_H
-
