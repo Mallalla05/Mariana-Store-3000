@@ -8,3 +8,18 @@ Funcionamientos principales:
 - Actualizar la cantidad de productos y sus precios.
 - Buscar los productos de acuerdo lo que pidas ya sea nombre, categoria, la cantidad que contiene o su precio.
 - Generar un reporte de los productos ordenados como tu quieras.
+
+
+Análisis de complejidad:
+
+El ordenamiento de productos usando merge sort O(n log n)
+
+Rubros:
+-SICT0302B: Toma decisiones
+En el proyecto se va a usar Merge Sort para poder ordenar los productos de manera mas rápida.
+
+-SICT0301B: Evalúa los Componentes
+Se ueden analisar la complejidad de las funciones del sistema.
+
+-SICT0303B: Implementa Acciones Científicas
+Ayuda a implementar el programa para buscar y ordenar los productos.
