@@ -80,6 +80,10 @@ public:
     }
 
     void mostrarProductos() const {
+        if (productos.empty()) {
+            std::cout << "El inventario está vacío." << std::endl;
+            return;
+        }
         for (const auto& producto : productos) {
             producto.mostrarProducto();
             std::cout << "-.-.-.-.-.-.- \n";
@@ -96,4 +100,6 @@ public:
 };
 
 #endif // INVENTARIO_H
+
+
 
