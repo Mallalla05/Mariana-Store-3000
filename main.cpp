@@ -1,5 +1,5 @@
 // Mariana Hernández Díaz
-// A01711207 
+// A01711207
 
 #include "Inventario.h"
 #include "Producto.h"
@@ -57,11 +57,11 @@ int main() {
         } else if (opcion == 2) {
             inventario.mostrarProductos();
         } else if (opcion == 3) {
-            inventario.ordenaNombre();
+            inventario.mergeSortNombre();
             std::cout << "Productos ordenados por nombre." << std::endl;
             inventario.mostrarProductos();
         } else if (opcion == 4) {
-            inventario.ordenaCantidad();
+            inventario.mergeSortCantidad();
             std::cout << "Productos ordenados por cantidad." << std::endl;
             inventario.mostrarProductos();
         } else if (opcion != 5) {
