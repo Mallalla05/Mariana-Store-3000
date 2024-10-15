@@ -13,6 +13,8 @@ Funcionamientos principales:
 Análisis de complejidad:
 
 El ordenamiento de productos usando merge sort O(n log n)
+Agregar producto es O(1)
+Mostrar productos O(n)
 
 Rubros:
 -SICT0302B: Toma decisiones
