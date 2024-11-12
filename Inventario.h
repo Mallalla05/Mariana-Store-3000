@@ -1,11 +1,13 @@
 // Mariana Hernández Díaz
-//A01711207
+// A01711207
 
 #ifndef INVENTARIO_H
 #define INVENTARIO_H
 
 #include "Producto.h"
 #include <iostream>
+#include <fstream> 
+#include <string>
 
 class Nodo {
 public:
@@ -29,12 +31,13 @@ public:
         if (!head) {
             head = tail = nuevo;
         } else {
-            tail->next = nuevo;  
-            nuevo->prev = tail;  
-            tail = nuevo;     
+            tail->next = nuevo;
+            nuevo->prev = tail;
+            tail = nuevo;
         }
     }
 
+   
     void mostrarProductos() const {
         if (!head) {
             std::cout << "El inventario está vacío." << std::endl;
@@ -44,8 +47,8 @@ public:
         Nodo* actual = head;
         while (actual) {
             actual->producto.mostrarProducto();
-            std::cout << "-.-.-.-.-.-.- \n";
-            actual = actual->next; 
+            std::cout << "-.-.-.-.-.-.-" << std::endl;
+            actual = actual->next;
         }
     }
 
@@ -54,9 +57,42 @@ public:
         head = mergeSort(head, true);
     }
 
+    
     void mergeSortCantidad() {
         if (!head || !head->next) return;
         head = mergeSort(head, false);
+    }
+
+    void cargarDesdeArchivo(const std::string& nombreArchivo) {
+        std::ifstream archivo(nombreArchivo);
+        if (archivo.is_open()) {
+            std::string nombre, categoria;
+            double precio;
+            int cantidad;
+            while (archivo >> nombre >> categoria >> precio >> cantidad) {
+                agregaProducto(Producto(nombre, categoria, precio, cantidad));
+            }
+            archivo.close();
+        } else {
+            std::cerr << "No se pudo abrir el archivo " << nombreArchivo << std::endl;
+        }
+    }
+
+    void guardarEnArchivo(const std::string& nombreArchivo) const {
+        std::ofstream archivo(nombreArchivo);
+        if (archivo.is_open()) {
+            Nodo* actual = head;
+            while (actual) {
+                archivo << actual->producto.getNombre() << " "
+                        << actual->producto.getCategoria() << " "
+                        << actual->producto.getPrecio() << " "
+                        << actual->producto.getCantidad() << std::endl;
+                actual = actual->next;
+            }
+            archivo.close();
+        } else {
+            std::cerr << "No se pudo abrir el archivo " << nombreArchivo << std::endl;
+        }
     }
 
 private:
@@ -66,8 +102,8 @@ private:
         Nodo* medio = getMiddle(head);
         Nodo* nextToMedio = medio->next;
 
-        medio->next = 0; 
-        nextToMedio->prev = 0; 
+        medio->next = 0;
+        nextToMedio->prev = 0;
         Nodo* left = mergeSort(head, sortByName);
         Nodo* right = mergeSort(nextToMedio, sortByName);
 
@@ -81,13 +117,13 @@ private:
         if ((sortByName && left->producto.getNombre() < right->producto.getNombre()) ||
             (!sortByName && left->producto.getCantidad() < right->producto.getCantidad())) {
             left->next = merge(left->next, right, sortByName);
-            left->next->prev = left; 
-            left->prev = 0; 
+            left->next->prev = left;
+            left->prev = 0;
             return left;
         } else {
             right->next = merge(left, right->next, sortByName);
-            right->next->prev = right; 
-            right->prev = 0; 
+            right->next->prev = right;
+            right->prev = 0;
             return right;
         }
     }
@@ -95,18 +131,17 @@ private:
     Nodo* getMiddle(Nodo* head) {
         if (!head) return head;
 
-        Nodo* lento = head;
-        Nodo* rapido = head->next;
+        Nodo* slow = head;
+        Nodo* fast = head->next;
 
-        while (rapido && rapido->next) {
-            lento = lento->next;
-            rapido = rapido->next->next;
+        while (slow && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
         }
-        return lento;
+        return slow;
     }
 };
 
 #endif // INVENTARIO_H
-
 
 
