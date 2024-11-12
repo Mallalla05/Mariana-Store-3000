@@ -15,7 +15,7 @@ void menu() {
 int main() {
     Inventario inventario;
 
-    std::string nombreArchivo = "productos.txt";
+    std::string nombreArchivo = "Productos.txt";
     inventario.cargarDesdeArchivo(nombreArchivo);
 
     int opcion = 1;
