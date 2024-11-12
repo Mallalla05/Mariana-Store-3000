@@ -1,9 +1,7 @@
-// Mariana Hernández Díaz
-// A01711207
-
 #include "Inventario.h"
 #include "Producto.h"
 #include <iostream>
+#include <fstream>
 
 void menu() {
     std::cout << "- . - Bienvenido a Mariana Store - . -" << std::endl;
@@ -14,24 +12,13 @@ void menu() {
     std::cout << " 5.- Salir" << std::endl;
 }
 
-void agregarProductoslista(Inventario& inventario) {
-    inventario.agregaProducto(Producto("Manzanas", "Frutas", 2.50, 15));
-    inventario.agregaProducto(Producto("Leche", "Lácteos", 45, 20));
-    inventario.agregaProducto(Producto("Pan", "Panadería", 3.50, 7));
-    inventario.agregaProducto(Producto("Huevos", "Proteínas", 1.00, 3));
-    inventario.agregaProducto(Producto("Zanahorias", "Verdura", 5.00, 45));
-    inventario.agregaProducto(Producto("Yogur", "Lácteos", 20, 25));
-    inventario.agregaProducto(Producto("Agua", "Bebidas", 23, 5));
-    inventario.agregaProducto(Producto("Sabritas", "Botana", 18, 9));
-}
-
 int main() {
     Inventario inventario;
 
-    agregarProductoslista(inventario);
+    std::string nombreArchivo = "productos.txt";
+    inventario.cargarDesdeArchivo(nombreArchivo);
 
     int opcion = 1;
-
     while (opcion != 5) {
         menu();
         std::cout << "Elige una opción: ";
@@ -53,23 +40,35 @@ int main() {
             Producto producto(nombre, categoria, precio, cantidad);
             inventario.agregaProducto(producto);
 
-            std::cout << "Producto agregado exitosamente.\n";
+            std::ofstream archivo(nombreArchivo, std::ios::app);
+            if (archivo.is_open()) {
+                archivo << nombre << " " << categoria << " " << precio << " " << cantidad << std::endl;
+                archivo.close();
+                std::cout << "Producto agregado y guardado exitosamente.\n";
+            } else {
+                std::cerr << "No se pudo abrir el archivo para guardar el producto.\n";
+            }
         } else if (opcion == 2) {
+            
             inventario.mostrarProductos();
         } else if (opcion == 3) {
+
             inventario.mergeSortNombre();
             std::cout << "Productos ordenados por nombre." << std::endl;
             inventario.mostrarProductos();
         } else if (opcion == 4) {
+         
             inventario.mergeSortCantidad();
             std::cout << "Productos ordenados por cantidad." << std::endl;
             inventario.mostrarProductos();
-        } else if (opcion != 5) {
-            std::cout << "Opción no válida, por favor elige otra opción." << std::endl;
+        } else if (opcion == 5) {
+            
+            std::cout << "¡Gracias por usar Mariana Store!" << std::endl;
+        } else {
+            std::cout << "Opción no válida." << std::endl;
         }
     }
 
-    std::cout << "Gracias por usar Mariana Store." << std::endl;
     return 0;
 }
 
