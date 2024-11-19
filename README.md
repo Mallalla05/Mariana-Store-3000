@@ -4,7 +4,7 @@ En dicho proyecto nos ayuda a tener un iventario de una tienda o abarrotesen lo 
 Otro de las funcionalidades es poder agregar nuevos productos y actualizar la lista de inventario.
 
 
-Funcionamientos principales:
+#Funcionamientos principales:
 - Registrar nuevos productos en el inventario unicamente dando los detalles.
 - Mostrar el inventario completo.
 - Ordenar los productos alfabeticamente.
@@ -13,7 +13,7 @@ Funcionamientos principales:
   
 
 
-Análisis de complejidad:
+#Análisis de complejidad:
 
 El ordenamiento de productos usando merge sort O(n log n)
 Agregar producto es O(1)
@@ -28,3 +28,8 @@ Se ueden analisar la complejidad de las funciones del sistema.
 
 -SICT0303B: Implementa Acciones Científicas
 Ayuda a implementar el programa para buscar y ordenar los productos.
+
+Consejos:
+
+-Ejecutar desde la terminal para evitar problemas de compiladores.
+-Al momento de agregar un nuevo producto colocar bien los valores, es decir, en el precio y cantidad unicamente colocar números y en nombre y categoria letras para que el programa funcione.
