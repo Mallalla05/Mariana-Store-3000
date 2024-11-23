@@ -6,22 +6,33 @@ Otro de las funcionalidades es poder agregar nuevos productos y actualizar la li
 
 **Funcionamientos principales:**
 
-***Agregar Producto:***
+**Agregar Producto:**
+
 -Nos deja ingresar un nuevo producto siempre y cuando se especifique su nombre,categoria,precio y cantidad.
+
 -Los productos se guardan en la lista doblemente enlazada para que sea mas rapida y flexible.
+
 -Complejidad 0(1),ya que el programa puede acceder a tail y añade el producto a lo ultimo de la lista sin recorrerla completa.
 
-***Mostrar Inventario:***
+
+**Mostrar Inventario:**
+
 -Muestra los productos registrados en el archivo .txt con todas sus atributos.
+
 -Complejidad 0(n),esto pues recorre todos los nodos de la lista doblemente enlazada para imprimir los datos.
 
-***Ordena Productos:***
+**Ordena Productos:**
+
 - Por nombre y cantidad:
+  
    -Usa merge sort para ordenar los productos de forma alfabetica,su  complejidad es O(n log n) ya que divide la lista en dos y luego las fusiona.
 
-***Datos:***
+**Datos:**
+
 -Cuando el programa se inicia los datos del archivo .txt se cargan de forma automatica.
+
 -Se debe de seguir el formato del archivo.
+
 -Cuando el programa acaba los datos de los nuevos productos se guardan en el archivo .txt
 
 **Análisis de complejidad:**
