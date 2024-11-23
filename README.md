@@ -45,9 +45,9 @@ Otro de las funcionalidades es poder agregar nuevos productos y actualizar la li
 
   -Lista doblemente enlazada:
 
-    -Agregar productos: O(1) puestiene acceso directo a tail.
+    -Agregar productos: O(1) puestiene acceso directo a tail
 
-    -Mostrar productos: O(n) recorre todos los nodos.
+    -Mostrar productos: O(n) recorre todos los nodos
 
 -Archivos:
 
