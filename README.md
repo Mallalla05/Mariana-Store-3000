@@ -37,22 +37,36 @@ Otro de las funcionalidades es poder agregar nuevos productos y actualizar la li
 
 **Análisis de complejidad:**
 
-El ordenamiento de productos usando merge sort O(n log n)
-Agregar producto es O(1)
-Mostrar productos O(n)
+-Ordenamiento:
+
+  -Merge Sort:O(n log n) por las combinaciones recursivas y de fusiones.
+
+-Estructura de datos:
+
+  -Lista doblemente enlazada:
+
+    -Agregar productos: O(1) puestiene acceso directo a tail.
+
+    -Mostrar productos: O(n) recorre todos los nodos.
+
+-Archivos:
+
+  -Lectura y escritura:Las dos son complejidad O(n) pues procesan todos y cada uno de los productos una vez.
+
 
 **Rubros:**
 
 -SICT0302B: Toma decisiones
-En el proyecto se va a usar Merge Sort para poder ordenar los productos de manera mas rápida.
+En el proyecto elegi el metodo de ordenamiento merge sort por ser eficiente cuando se trabajan en las listas grandes y suele tener mas exactitud en l forma que ordena.
 
 -SICT0301B: Evalúa los Componentes
-Se ueden analisar la complejidad de las funciones del sistema.
+Ordenamiento O(n log n) y las inserciones O(1).
 
 -SICT0303B: Implementa Acciones Científicas
-Ayuda a implementar el programa para buscar y ordenar los productos.
+Con el programa lo que podemos hacer en el inventario es ordenar y registrar los productos de una forma que sea efectiva y rápida.
 
 **Consejos:**
 
 -Ejecutar desde la terminal para evitar problemas de compiladores.
+
 -Al momento de agregar un nuevo producto colocar bien los valores, es decir, en el precio y cantidad unicamente colocar números y en nombre y categoria letras para que el programa funcione.
