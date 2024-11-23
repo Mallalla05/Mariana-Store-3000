@@ -1,17 +1,28 @@
 # Mariana-Store-3000
 
-En dicho proyecto nos ayuda a tener un iventario de una tienda o abarrotesen lo que podamos encontrar los produtos que normalmente utilizamos o encontramos los cuales tendran dentro de esta lista el nombre del producto, la catengoria en la que se encuentra ademas de su precio y el  número disponible de piezas de este articulo,estas caracteristicas ayudaran a desde el programa poder visualizar el inventario final ademas de poder ordenarlo por orden alfabetico y de cantidad asi facilitando la busqueda y el saber la existencia de ello.
+En dicho proyecto nos ayuda a tener un inventario de una tienda o abarrotes en la que podamos encontrar los produtos que normalmente utilizamos o encontramos los cuales tendran dentro de esta lista el nombre del producto, la catengoria en la que se encuentra ademas de su precio y el  número disponible de piezas de este articulo,estas caracteristicas ayudaran a desde el programa poder visualizar el inventario final ademas de poder ordenarlo por orden alfabetico y de cantidad asi facilitando la busqueda y el saber la existencia de ello.
 Otro de las funcionalidades es poder agregar nuevos productos y actualizar la lista de inventario.
 
 
 **Funcionamientos principales:**
 
-- Registrar nuevos productos en el inventario unicamente dando los detalles.
-- Mostrar el inventario completo.
-- Ordenar los productos alfabeticamente.
-- Ordenar los productos por numero de cantidades que tiene.
-  
+***Agregar Producto:***
+-Nos deja ingresar un nuevo producto siempre y cuando se especifique su nombre,categoria,precio y cantidad.
+-Los productos se guardan en la lista doblemente enlazada para que sea mas rapida y flexible.
+-Complejidad 0(1),ya que el programa puede acceder a tail y añade el producto a lo ultimo de la lista sin recorrerla completa.
 
+***Mostrar Inventario:***
+-Muestra los productos registrados en el archivo .txt con todas sus atributos.
+-Complejidad 0(n),esto pues recorre todos los nodos de la lista doblemente enlazada para imprimir los datos.
+
+***Ordena Productos:***
+- Por nombre y cantidad:
+   -Usa merge sort para ordenar los productos de forma alfabetica,su  complejidad es O(n log n) ya que divide la lista en dos y luego las fusiona.
+
+***Datos:***
+-Cuando el programa se inicia los datos del archivo .txt se cargan de forma automatica.
+-Se debe de seguir el formato del archivo.
+-Cuando el programa acaba los datos de los nuevos productos se guardan en el archivo .txt
 
 **Análisis de complejidad:**
 
