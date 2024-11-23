@@ -23,7 +23,7 @@ Otro de las funcionalidades es poder agregar nuevos productos y actualizar la li
 
 **Ordena Productos:**
 
-- Por nombre y cantidad:
+<ins>- Por nombre y cantidad:</ins>
   
    -Usa merge sort para ordenar los productos de forma alfabetica,su  complejidad es O(n log n) ya que divide la lista en dos y luego las fusiona.
 
@@ -37,32 +37,32 @@ Otro de las funcionalidades es poder agregar nuevos productos y actualizar la li
 
 **Análisis de complejidad:**
 
--Ordenamiento:
+<ins>-Ordenamiento:</ins>
 
   -Merge Sort:O(n log n) por las combinaciones recursivas y de fusiones.
 
--Estructura de datos:
+<ins>-Estructura de datos:</ins>
 
-  -Lista doblemente enlazada:
+ <ins> -Lista doblemente enlazada:</ins>
 
   -Agregar productos: O(1) puestiene acceso directo a tail
 
   -Mostrar productos: O(n) recorre todos los nodos
 
--Archivos:
+<ins>-Archivos:</ins>
 
   -Lectura y escritura:Las dos son complejidad O(n) pues procesan todos y cada uno de los productos una vez.
 
 
 **Rubros:**
 
--SICT0302B: Toma decisiones
+<ins>-SICT0302B: Toma decisiones</ins>
 En el proyecto elegi el metodo de ordenamiento merge sort por ser eficiente cuando se trabajan en las listas grandes y suele tener mas exactitud en l forma que ordena.
 
--SICT0301B: Evalúa los Componentes
+<ins>-SICT0301B: Evalúa los Componentes</ins>
 Ordenamiento O(n log n) y las inserciones O(1).
 
--SICT0303B: Implementa Acciones Científicas
+<ins>-SICT0303B: Implementa Acciones Científicas</ins>
 Con el programa lo que podemos hacer en el inventario es ordenar y registrar los productos de una forma que sea efectiva y rápida.
 
 **Consejos:**
