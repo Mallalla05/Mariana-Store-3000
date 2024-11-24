@@ -8,3 +8,4 @@ Agua Bebidas 25 36
 Pañales Bebés 250 212
 Palmolive Jabón 45 5
 Lapiz Papelería 5 240
+Ariel Detergentes 45 280
