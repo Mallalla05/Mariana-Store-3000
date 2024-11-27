@@ -94,8 +94,8 @@ El programa proporciona mecanismos claros y efectivos para consultar informació
 <ins>Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta</ins>
 El programa carga los datos que se encuentran en los archivos.
 
-1. Abre el archivo `Productos.txt` 
-2. Función `cargarDesdeArchivo.
+1. Abre el archivo Productos.txt
+2. Función cargarDesdeArchivo.
 
 3.Validación
 
