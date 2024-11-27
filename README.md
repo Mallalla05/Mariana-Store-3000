@@ -44,23 +44,27 @@ En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la fu
 
 <ins>Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa: </ins>
 
--Merge sort: O(n log n) pues divide,ordena y combina las listas.
+En el archivo Inventario.h es donde se tiene la lista de productos la cual almacena los productos registrados y de esta manera acomodarlo por nombre o cantidad disponible usando el metodo Merge Sort.
 
--Lista doblemente enlazada:
+-mergeSortNombre: Posee una complejidad de O(n log n) pues divide las listas en mitades,ordena de forma recursiva y combina las mitades.
+-mergeSortCantidad: Posee una complejidad de O(n log n) pues divide las listas en mitades,ordena de forma recursiva y combina las mitades.
 
--Agregar producto: O(1) ya que no se recorre toda la lista.
+**Hace un análisis de complejidad correcto y completo para todas las estructuras de datos y cada uno de sus usos en el programa:**
  
--Mostrar productos: O(n) pues va de nodo a nodo.
+ Se utiliza la lista doblemente enlazada en la clase de inventario:
  
--Carga de archivos: O(n) procesa un nodo por línea del archivo.
- 
--Guardar datos de archivo: O(n) procesa un nodo por línea que se escriba.
+ -agregaProducto:Posee una complejidad de O(1) ya que se inserta de forma directa usando tail.
+ -mostrarProductos:Posee una complejidad de O(n) pues recorre la lista de head hasta tail.
+ -cargarDesdeArchivo:Posee una complejidad de O(n) ya que lee los datos de Productos.txt y los agrega a la lista enlazada siendo n la cantidad de productos.
+ -guardarEnArchivo:Posee una complejidad de O(n) ya que recorre los nodos de la lista para poder extraerlos.
+ -mergeSortNombre y mergeSortcantidad:Posee una complejidad de O(n log n) implementa merge para ordenar la lista por nombre o cantidad.
+ -actualizarTail:Posee una complejidad de O(n) ya que recorre la lista pra encontrar el último nodo.
+
 
 <br />
 
 
  <br />
-
 
 
  
