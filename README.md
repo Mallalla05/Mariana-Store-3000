@@ -100,3 +100,7 @@ El programa carga los datos que se encuentran en los archivos.
 -Ejecutar desde la terminal para evitar problemas de compiladores.
 
 -Al momento de agregar un nuevo producto colocar bien los valores, es decir, en el precio y cantidad unicamente colocar números y en nombre y categoria letras para que el programa funcione.
+
+**Correcciones :**
+
+Se modificaron las descripciones de complejidad en el readme
