@@ -47,6 +47,7 @@ En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la fu
 En el archivo Inventario.h es donde se tiene la lista de productos la cual almacena los productos registrados y de esta manera acomodarlo por nombre o cantidad disponible usando el metodo Merge Sort.
 
 -mergeSortNombre: Posee una complejidad de O(n log n) pues divide las listas en mitades,ordena de forma recursiva y combina las mitades.
+
 -mergeSortCantidad: Posee una complejidad de O(n log n) pues divide las listas en mitades,ordena de forma recursiva y combina las mitades.
 
 
