@@ -54,10 +54,15 @@ En el archivo Inventario.h es donde se tiene la lista de productos la cual almac
  Se utiliza la lista doblemente enlazada en la clase de inventario:
  
  -agregaProducto:Posee una complejidad de O(1) ya que se inserta de forma directa usando tail.
+ 
  -mostrarProductos:Posee una complejidad de O(n) pues recorre la lista de head hasta tail.
+ 
  -cargarDesdeArchivo:Posee una complejidad de O(n) ya que lee los datos de Productos.txt y los agrega a la lista enlazada siendo n la cantidad de productos.
+ 
  -guardarEnArchivo:Posee una complejidad de O(n) ya que recorre los nodos de la lista para poder extraerlos.
+ 
  -mergeSortNombre y mergeSortcantidad:Posee una complejidad de O(n log n) implementa merge para ordenar la lista por nombre o cantidad.
+ 
  -actualizarTail:Posee una complejidad de O(n) ya que recorre la lista pra encontrar el último nodo.
 
 
