@@ -1,6 +1,6 @@
 # Mariana-Store-3000
 
-En dicho proyecto nos ayuda a tener un inventario de una tienda o abarrotes en la que podamos encontrar los produtos que normalmente utilizamos o encontramos los cuales tendran dentro de esta lista el nombre del producto, la catengoria en la que se encuentra ademas de su precio y el  número disponible de piezas de este articulo,estas caracteristicas ayudaran a desde el programa poder visualizar el inventario final ademas de poder ordenarlo por orden alfabetico y de cantidad asi facilitando la busqueda y el saber la existencia de ello.
+Este proyecto nos ayuda a tener el control sobre un inventario de una tienda o abarrotes en la que podemos encontrar los produtos que normalmente utilizamos  los cuales tendran dentro de esta lista el nombre del producto, la catengoria en la que se encuentra ademas de su precio y el  número disponible de piezas de este articulo,estas caracteristicas ayudaran a desde el programa poder visualizar el inventario final ademas de poder ordenarlo por orden alfabetico y de cantidad asi facilitando la busqueda y el saber la existencia de ello.
 Otro de las funcionalidades es poder agregar nuevos productos y actualizar la lista de inventario.
 
 
@@ -9,61 +9,52 @@ Otro de las funcionalidades es poder agregar nuevos productos y actualizar la li
 **Agregar Producto:**
 
 -Nos deja ingresar un nuevo producto siempre y cuando se especifique su nombre,categoria,precio y cantidad.
-
 -Los productos se guardan en la lista doblemente enlazada para que sea mas rapida y flexible.
-
--Complejidad 0(1),ya que el programa puede acceder a tail y añade el producto a lo ultimo de la lista sin recorrerla completa.
 
 
 **Mostrar Inventario:**
-
--Muestra los productos registrados en el archivo .txt con todas sus atributos.
-
--Complejidad 0(n),esto pues recorre todos los nodos de la lista doblemente enlazada para imprimir los datos.
+- Imprime y muestra los productos registrados en el archivo .txt  con sus atributos: nombre, categoría, precio y cantidad.
 
 **Ordena Productos:**
 
-<ins>- Por nombre y cantidad:</ins>
+- Por Nombre y Cantidad  para ordenar de manera eficiente.
   
-   -Usa merge sort para ordenar los productos de forma alfabetica,su  complejidad es O(n log n) ya que divide la lista en dos y luego las fusiona.
-
-**Datos:**
-
--Cuando el programa se inicia los datos del archivo .txt se cargan de forma automatica.
-
+**Flujo de Datos:**
+- Al iniciar el programa, los productos se cargan automáticamente desde un archivo 
+- El programa actualiza el archivo con los nuevos productos al finalizar.
 -Se debe de seguir el formato del archivo.
 
--Cuando el programa acaba los datos de los nuevos productos se guardan en el archivo .txt
+**Manejo de archivos:**
+-Lectura y Escritura en el archivo .txt
 
-**Análisis de complejidad:**
+**SICT0302B: Toma decisiones:**
 
-<ins>-Ordenamiento:</ins>
+<ins>Selecciona y usa una estructura de datos adecuada al problema y lo usa correctamente. </ins>
 
-  -Merge Sort:O(n log n) por las combinaciones recursivas y de fusiones.
-
-<ins>-Estructura de datos:</ins>
-
- <ins> -Lista doblemente enlazada:</ins>
-
-  -Agregar productos: O(1) puestiene acceso directo a tail
-
-  -Mostrar productos: O(n) recorre todos los nodos
-
-<ins>-Archivos:</ins>
-
-  -Lectura y escritura:Las dos son complejidad O(n) pues procesan todos y cada uno de los productos una vez.
+Se utiliza la  lista doblemente enlazada para poder tener mejor gestión de los productos del inventario pues nos da un  rápido acceso al inicio (head) y al final (tail),lo que deja recorrer en ambas direcciones ya sea inicio o el fin,ya que se permite agregar un producto con tail y mostrar los productos recorriendo todos los nodos para poder imprimir el inventario.
 
 
-**Rubros:**
+<ins>Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente. </ins>
 
-<ins>-SICT0302B: Toma decisiones</ins>
-En el proyecto elegi el metodo de ordenamiento merge sort por ser eficiente cuando se trabajan en las listas grandes y suele tener mas exactitud en l forma que ordena.
+En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la función de merge sort ya que es la mejor cuando se trata de lista s largas ya que se implementó para poder ordenar por nombre o la cantidad de productos,es decir mergeSortNombre y mergeSortCantidad,las cuales dividen la lista en mitades y cada una la ordenan de forma recursiva para después juntarlas.
 
-<ins>-SICT0301B: Evalúa los Componentes</ins>
-Ordenamiento O(n log n) y las inserciones O(1).
 
-<ins>-SICT0303B: Implementa Acciones Científicas</ins>
-Con el programa lo que podemos hacer en el inventario es ordenar y registrar los productos de una forma que sea efectiva y rápida.
+**SICT0301B: Evalúa los componentes**
+<ins>Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa: </ins>
+
+**SICT0303B: Implementa acciones científicas**
+<ins>Implementa mecanismos para consultar información de las estructuras correctamente </ins>
+El programa proporciona mecanismos claros y efectivos para consultar información almacenada en la lista doblemente enlazada:
+
+1. Mostrar productos:
+2. Ordenar productos:
+
+<ins>Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta</ins>
+El programa carga los datos que se encuentran en los archivos.
+
+1. Abre el archivo `Productos.txt` 
+2. Función `cargarDesdeArchivo.
+3.Validación
 
 **Consejos:**
 
