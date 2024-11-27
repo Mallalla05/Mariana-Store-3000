@@ -58,9 +58,9 @@ En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la fu
 
  
 
--Complejidad espacial total del programa:O(n) O(n log n)
+<ins>-Complejidad espacial total del programa:O(n) O(n log n)
 
--Complejidad temporal total del programa: O(n log n)
+-Complejidad temporal total del programa: O(n log n)</ins>
 
 
 **SICT0303B: Implementa acciones científicas**
@@ -76,7 +76,8 @@ El programa carga los datos que se encuentran en los archivos.
 
 1. Abre el archivo `Productos.txt` 
 2. Función `cargarDesdeArchivo.
-   3.Validación
+
+3.Validación
 
 **Consejos:**
 
