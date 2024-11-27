@@ -59,6 +59,14 @@ En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la fu
 
 
 
+
+
+
+
+
+
+
+
  
 
 -Complejidad espacial total del programa:O(n) O(n log n)
