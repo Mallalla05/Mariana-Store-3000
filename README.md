@@ -56,11 +56,14 @@ En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la fu
  
 -Guardar datos de archivo: O(n) procesa un nodo por línea que se escriba.
 
+
+
+
  
 
-<ins>-Complejidad espacial total del programa:O(n) O(n log n)
+-Complejidad espacial total del programa:O(n) O(n log n)
 
--Complejidad temporal total del programa: O(n log n)</ins>
+-Complejidad temporal total del programa: O(n log n)
 
 
 **SICT0303B: Implementa acciones científicas**
