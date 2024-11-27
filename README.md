@@ -56,14 +56,10 @@ En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la fu
  
 -Guardar datos de archivo: O(n) procesa un nodo por línea que se escriba.
 
+<br />
 
 
-
-
-
-
-
-
+ <br />
 
 
 
