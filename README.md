@@ -40,9 +40,22 @@ En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la fu
 
 
 **SICT0301B: Evalúa los componentes**
+
 <ins>Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa: </ins>
 
+-Merge sort: O(n log n) pues divide,ordena y combina las listas.
+-Lista doblemente enlazada:
+	-Agregar producto: O(1) ya que no se recorre toda la lista.
+	-Mostrar productos: O(n) pues va de nodo a nodo.
+	-Carga de archivos: O(n) procesa un nodo por línea del archivo.
+	-Guardar datos de archivo: O(n) procesa un nodo por línea que se escriba.
+
+-Complejidad espacial total del programa:O(n) O(n log n)
+-Complejidad temporal total del programa: O(n log n)
+
+
 **SICT0303B: Implementa acciones científicas**
+
 <ins>Implementa mecanismos para consultar información de las estructuras correctamente </ins>
 El programa proporciona mecanismos claros y efectivos para consultar información almacenada en la lista doblemente enlazada:
 
