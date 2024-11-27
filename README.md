@@ -48,13 +48,13 @@ En cuanto a método de ordenamiento lo que se utilizó en este proyecto es la fu
 
 -Lista doblemente enlazada:
 
-	-Agregar producto: O(1) ya que no se recorre toda la lista.
+-Agregar producto: O(1) ya que no se recorre toda la lista.
  
-	-Mostrar productos: O(n) pues va de nodo a nodo.
+-Mostrar productos: O(n) pues va de nodo a nodo.
  
-	-Carga de archivos: O(n) procesa un nodo por línea del archivo.
+-Carga de archivos: O(n) procesa un nodo por línea del archivo.
  
-	-Guardar datos de archivo: O(n) procesa un nodo por línea que se escriba.
+-Guardar datos de archivo: O(n) procesa un nodo por línea que se escriba.
 
  
 
@@ -76,8 +76,7 @@ El programa carga los datos que se encuentran en los archivos.
 
 1. Abre el archivo `Productos.txt` 
 2. Función `cargarDesdeArchivo.
-   
-3.Validación
+   3.Validación
 
 **Consejos:**
 
