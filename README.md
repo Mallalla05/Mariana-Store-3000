@@ -49,7 +49,6 @@ En el archivo Inventario.h es donde se tiene la lista de productos la cual almac
 -mergeSortNombre: Posee una complejidad de O(n log n) pues divide las listas en mitades,ordena de forma recursiva y combina las mitades.
 -mergeSortCantidad: Posee una complejidad de O(n log n) pues divide las listas en mitades,ordena de forma recursiva y combina las mitades.
 
-Esto debido a que O(n) es por la lista doblemente enlazada se almacenan los nodos en la memoria y es proporcional a los productos del inventario, O(n log n) que se da por el ordenamiento de Merge Sort.
 
 **Hace un análisis de complejidad correcto y completo para todas las estructuras de datos y cada uno de sus usos en el programa:**
  
@@ -79,6 +78,8 @@ Esto debido a que O(n) es por la lista doblemente enlazada se almacenan los nodo
 -Complejidad espacial total del programa:O(n) O(n log n)
 
 -Complejidad temporal total del programa: O(n log n)
+
+Esto debido a que O(n) es por la lista doblemente enlazada se almacenan los nodos en la memoria y es proporcional a los productos del inventario, O(n log n) que se da por el ordenamiento de Merge Sort.
 
 
 **SICT0303B: Implementa acciones científicas**
